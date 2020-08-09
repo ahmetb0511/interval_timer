@@ -305,7 +305,7 @@ class IntervalPlayerPageState extends State<IntervalPlayerPage> with TickerProvi
                 if(snapshot.hasData) {
                   return Text('${snapshot.data}', style: themeData.textTheme.display1);
                 } else if(snapshot.hasError) {
-                  return Text('Qoute error: ${snapshot.error.toString()}', style: themeData.textTheme.display1);
+                  return Text('Quote error: ${snapshot.error.toString()}', style: themeData.textTheme.display1);
                 } else {
                   return CircularProgressIndicator();
                 }
